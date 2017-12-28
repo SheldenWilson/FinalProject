@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.swilson4264.imdb1.AddMovie"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/mNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="Movie Name"
+        android:layout_alignBottom="@+id/mNameTxt"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1"
+        android:text="Add A Movie"
+        android:textSize="40sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/mDescriptionTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/mNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/Label"
+        android:layout_alignLeft="@+id/mDescriptionTxt"
+        android:layout_alignStart="@+id/mDescriptionTxt" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Description"
+        android:layout_marginTop="55dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/mNameTxt"
+        android:layout_toLeftOf="@+id/mDescriptionTxt"
+        android:layout_toStartOf="@+id/mDescriptionTxt"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp" />
+
+    <Spinner
+        android:id="@+id/aRatingSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/textView6"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView7"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginBottom="23dp"
+        android:text="Age Rating"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_centerVertical="true"
+        android:text="Release Date :"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genre"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_marginTop="18dp" />
+
+    <ScrollView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView9"
+        android:id="@+id/scrollView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/actionCBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Action" />
+
+            <CheckBox
+                android:id="@+id/adventureCBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adventure" />
+
+            <CheckBox
+                android:id="@+id/animationCBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Animation" />
+
+            <CheckBox
+                android:id="@+id/comedyCBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comedy" />
+
+            <CheckBox
+                android:id="@+id/crimeCBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crime" />
+
+            <CheckBox
+                android:id="@+id/fantasyCBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fantasy" />
+
+            <CheckBox
+                android:id="@+id/horrorCBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Horror" />
+
+            <CheckBox
+                android:id="@+id/mysteryCBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mystery" />
+
+            <CheckBox
+                android:id="@+id/romanceCBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Romance" />
+
+            <CheckBox
+                android:id="@+id/scifiCBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sci-Fi" />
+
+            <CheckBox
+                android:id="@+id/thrillerCBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thriller" />
+
+            <CheckBox
+                android:id="@+id/westernCBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Western" />
+        </LinearLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/saveMovieBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:text="Save Movie" />
+
+</android.widget.RelativeLayout>

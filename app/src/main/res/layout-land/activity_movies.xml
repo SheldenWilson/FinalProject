@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.swilson4264.imdb1.Movies">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Movie"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/homeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="homeScreen"
+        android:text="Home"
+        android:layout_alignBaseline="@+id/moviesBtn"
+        android:layout_alignBottom="@+id/moviesBtn"
+        android:layout_toLeftOf="@+id/moviesBtn"
+        android:layout_toStartOf="@+id/moviesBtn" />
+
+    <Button
+        android:id="@+id/moviesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="movieScreen"
+        android:text="Movies"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/tvshowsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/moviesBtn"
+        android:layout_toEndOf="@+id/moviesBtn"
+        android:layout_toRightOf="@+id/moviesBtn"
+        android:onClick="tvShowScreen"
+        android:text="TV" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="homeScreen"
+        app:srcCompat="@drawable/imdbbtn"
+        android:layout_above="@+id/homeBtn"
+        android:layout_centerHorizontal="true" />
+</android.widget.RelativeLayout>
